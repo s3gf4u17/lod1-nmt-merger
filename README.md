@@ -30,7 +30,7 @@ python3 CityGML2OBJs.py -i <folder z plikami GML> -o <folder do zapisu> -g 1
         - +triangulated mesh
         - -materials export
 ### 3. Skompilować kod źródłowy
-Program korzysta z zewnętrznych bibliotek. W folderze z kodem źródłowym należy utworzyć nowy folder `library`. Następnie pobrać odpowiednie wersje każdej z bibliotek: [boost-1.85.0](https://boostorg.jfrog.io/artifactory/main/release/1.85.0/source/boost_1_85_0.tar.gz), [CGAL-5.6](https://github.com/CGAL/cgal/releases/download/v5.6/CGAL-5.6-library.tar.xz), [eigen-3.4.0](https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.gz). Po wypakowaniu drzewo plików powinno prezentować się następująco:
+Program korzysta z zewnętrznych bibliotek. W folderze z kodem źródłowym należy utworzyć nowy folder `library`. Następnie pobrać odpowiednie wersje każdej z bibliotek: [boost-1.85.0](https://boostorg.jfrog.io/artifactory/main/release/1.85.0/source/boost_1_85_0.tar.gz), [CGAL-5.6](https://github.com/CGAL/cgal/releases/download/v5.6/CGAL-5.6-library.tar.xz), [eigen-3.4.0](https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.gz). Po wypakowaniu drzewo plików powinno prezentować się mniej więcej tak:
 ```
 library
 ├── boost_1_85_0
@@ -48,5 +48,13 @@ library
     ├── blas
     ├── ci
     └── ...
+```
+Kompilacja wymaga instalacji dodatkowych pakietów:
+```
+sudo apt install libgmp-dev libmpfr-dev cmake -y
+```
+Następnie z wykorzystaniem narzędzia Cmake stworzyć folder `build` w którym wygenerowane zostaną pliki dla kompilatora:
+```
+cmake -DCGAL_DIR=library/CGAL-5.6 -DBOOST_ROOT=library/boost_1_85_0 -DEIGEN3_INCLUDE_DIR=library/eigen-3.4.0 -DCMAKE_BUILD_TYPE=Release -S . -B build
 ```
 ### 4. uruchomic program
