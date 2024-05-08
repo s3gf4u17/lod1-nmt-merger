@@ -18,7 +18,16 @@ python3 CityGML2OBJs.py -i <folder z plikami GML> -o <folder do zapisu> -g 1
     - "TAB" do przejścia w tryb edycji
     - "1" do przejścia w tryb werteksów
     - "A" do zaznaczenia wszystkich werteksów
-    - prawy przycisk myszy -> merge vertices -> by distance (ustawić distance na np 0.2m)
-- wyeksportowac kazdy z obiektow do nowego, wspolnego folderu (klikniecie na obiekt,file->export->wavefront obj:limit to selected,forward -Z,up Y,+normals,+triangulated mesh,-materials export)
+    - prawy przycisk myszy -> merge vertices -> by distance
+        - w lewym dolnym rogu ekranu ustawić distance na np 0.2m
+- wyeksportować każdy z obiektów do nowego, wspólnego folderu
+    - klikniecie na obiekt
+    - file->export->wavefront obj
+        - limit to selected
+        - forward -Z
+        - up Y
+        - +normals
+        - +triangulated mesh
+        - -materials export
 3. skompilowac program
 4. uruchomic program
