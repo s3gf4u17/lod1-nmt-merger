@@ -1,6 +1,6 @@
-1. przekonwertowac warstwe GML do OBJ
-- sklonowac repozytorium https://github.com/tum-gis/CityGML2OBJv2
-- zainstalowac wymagane biblioteki, przyklad:
+1. Przekonwertować dane CityGML do formatu OBJ
+- sklonować repozytorium https://github.com/tum-gis/CityGML2OBJv2
+- zainstalować wymagane biblioteki, przykład:
 ```
 sudo apt install virtualenv
 virtualenv --python=python3 venv
