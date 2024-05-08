@@ -79,4 +79,10 @@ Przykładowe dane zamieszczono razem w folderze `temp`. Program należy wywoła�
 ```
 ./main <sciezka-do-nmt-obj> <folder-z-budynkami-obj>
 ```
+Wykorzystując jedynie dane zawarte w repozytorium komenda będzie wyglądać następująco:
+```
+./main ../data/nmt.obj ../temp
+```
 Wygenerowany zostanie plik `result.obj` z wynikiem połączenia geometrii NMT i CityGML. Z uwagi na to, że potraktowałem to jako zadanie czysto rekrutacyjne, nie dokładałem dodatkowych flag (np. do zmiany kierunku wektorów normalnych mesha). Na obecnym etapie takich zmian należy dokonywać w kodzie.
+> [!WARNING]  
+> W pliku `CMakeLists.txt` znajduje się również link do innej biblioteki - tinyxml2. Nie jest wymagane jej pobranie, linki zostały zakomentowane gdyż biblioteka nie została ostatecznie wykorzystana, ale może się przydać w przyszłości.
