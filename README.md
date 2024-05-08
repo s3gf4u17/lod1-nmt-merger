@@ -79,4 +79,4 @@ Przykładowe dane zamieszczono razem w folderze `temp`. Program należy wywoła�
 ```
 ./main <sciezka-do-nmt-obj> <folder-z-budynkami-obj>
 ```
-Z uwagi na to, że potraktowałem to jako zadanie czysto rekrutacyjne, nie dokładałem dodatkowych flag (np. do zmiany kierunku wektorów normalnych mesha). Na obecnym etapie takich zmian należy dokonywać w kodzie.
+Wygenerowany zostanie plik `result.obj` z wynikiem połączenia geometrii NMT i CityGML. Z uwagi na to, że potraktowałem to jako zadanie czysto rekrutacyjne, nie dokładałem dodatkowych flag (np. do zmiany kierunku wektorów normalnych mesha). Na obecnym etapie takich zmian należy dokonywać w kodzie.
