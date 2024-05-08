@@ -21,7 +21,7 @@ python3 CityGML2OBJs.py -i <folder z plikami GML> -o <folder do zapisu> -g 1
     - prawy przycisk myszy -> merge vertices -> by distance
         - w lewym dolnym rogu ekranu ustawić distance na np 0.2m
 - wyeksportować każdy z obiektów do nowego, wspólnego folderu
-    - klikniecie na obiekt
+    - kliknięcie na obiekt
     - file->export->wavefront obj
         - limit to selected
         - forward -Z
@@ -29,5 +29,6 @@ python3 CityGML2OBJs.py -i <folder z plikami GML> -o <folder do zapisu> -g 1
         - +normals
         - +triangulated mesh
         - -materials export
-3. skompilowac program
+### 3. Skompilować kod źródłowy
+Program korzysta z zewnętrznych bibliotek (boost/CGAL/eigen). W folderze z kodem źródłowym należy utworzyć nowy folder `library`
 4. uruchomic program
