@@ -1,3 +1,6 @@
+> [!NOTE]  
+> Jako iż wiem, że nie wszyscy mają ochotę na zabawę z Cmake'm, gotowy skompilowany program można znaleźć w zakładce Releases (po prawej stronie w GUI Githuba). BUILD JEDYNIE POD LINUXA.
+
 ### 1. Przekonwertować dane CityGML do formatu OBJ
 - sklonować repozytorium https://github.com/tum-gis/CityGML2OBJv2
 - w sklonowanym folderze zainstalować wymagane biblioteki, przykład:
