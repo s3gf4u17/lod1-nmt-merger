@@ -30,5 +30,5 @@ python3 CityGML2OBJs.py -i <folder z plikami GML> -o <folder do zapisu> -g 1
         - +triangulated mesh
         - -materials export
 ### 3. Skompilować kod źródłowy
-Program korzysta z zewnętrznych bibliotek (boost/CGAL/eigen). W folderze z kodem źródłowym należy utworzyć nowy folder `library`. Następnie pobrać odpowiednie wersje każdej z bibliotek: [boost](), [CGAL](https://github.com/CGAL/cgal/releases/download/v5.6/CGAL-5.6-library.tar.xz), [eigen](https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.gz)
+Program korzysta z zewnętrznych bibliotek. W folderze z kodem źródłowym należy utworzyć nowy folder `library`. Następnie pobrać odpowiednie wersje każdej z bibliotek: [boost-1.85.0](), [CGAL-5.6](https://github.com/CGAL/cgal/releases/download/v5.6/CGAL-5.6-library.tar.xz), [eigen-3.4.0](https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.gz).
 4. uruchomic program
