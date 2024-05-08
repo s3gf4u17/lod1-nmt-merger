@@ -62,8 +62,7 @@ Ostatecznie, skompilować program:
 cd build && make -j8
 ```
 Program zostanie utworzony w lokalizacji `projekt/build/main`. Można go następnie przerzucić do dowolnego folderu jako samodzielny plik wykonywalny.
-```
 > [!WARNING]  
 > Critical content demanding immediate user attention due to potential risks.
-```
+
 ### 4. Uruchomić program
