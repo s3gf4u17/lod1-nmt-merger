@@ -85,4 +85,4 @@ Wykorzystując jedynie dane zawarte w repozytorium komenda będzie wyglądać na
 ```
 Wygenerowany zostanie plik `result.obj` z wynikiem połączenia geometrii NMT i CityGML. Z uwagi na to, że potraktowałem to jako zadanie czysto rekrutacyjne, nie dokładałem dodatkowych flag (np. do zmiany kierunku wektorów normalnych mesha). Na obecnym etapie takich zmian należy dokonywać w kodzie.
 > [!WARNING]  
-> W pliku `CMakeLists.txt` znajduje się również link do innej biblioteki - tinyxml2. Nie jest wymagane jej pobranie, linki zostały zakomentowane gdyż biblioteka nie została ostatecznie wykorzystana, ale może się przydać w przyszłości.
+> Właśnie zauważyłem, że zapomniałem dodać translacji mesha do jego miejsca początkowego (pierwszy punkt nmt będzie zatem miał współrzędne 0,0,0 zamiast swoich wejściowych). Jest to dorzucenie 1 linijki kodu ale nie mam jak tego chwilowo zrobić gdyż jestem poza domem.
