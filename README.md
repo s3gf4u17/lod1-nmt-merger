@@ -57,4 +57,9 @@ Następnie z wykorzystaniem narzędzia Cmake stworzyć folder `build` w którym 
 ```
 cmake -DCGAL_DIR=library/CGAL-5.6 -DBOOST_ROOT=library/boost_1_85_0 -DEIGEN3_INCLUDE_DIR=library/eigen-3.4.0 -DCMAKE_BUILD_TYPE=Release -S . -B build
 ```
+Ostatecznie, skompilować program:
+```
+cd build && make -j8
+```
+Program zostanie utworzony w lokalizacji `projekt/build/main`. Można go następnie przerzucić do innego folderu jako samodzielny plik wykonywalny.
 ### 4. uruchomic program
