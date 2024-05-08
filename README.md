@@ -64,5 +64,14 @@ cd build && make -j8
 Program zostanie utworzony w lokalizacji `projekt/build/main`. Można go następnie przerzucić do dowolnego folderu jako samodzielny plik wykonywalny.
 > [!WARNING]  
 > W pliku `CMakeLists.txt` znajduje się również link do innej biblioteki - tinyxml2. Nie jest wymagane jej pobranie, linki zostały zakomentowane gdyż biblioteka nie została ostatecznie wykorzystana, ale może się przydać w przyszłości.
-
 ### 4. Uruchomić program
+Przyotowane wcześniej budynki powinny znajdować się w oddzielnych plikach, w jednym folderze. Folder nie powinien zawierać innych plików. Przykład:
+```
+temp
+├── ID-0464-2EE13F53-5D0A-10BF-E053-CA2BA8C063B3.obj
+├── ID-0464-2EE13F53-5D07-10BF-E053-CA2BA8C063B3.obj
+├── ID-0464-2EE13F53-63BA-10BF-E053-CA2BA8C063B3.obj
+├── ID-0464-2EE13F53-64E4-10BF-E053-CA2BA8C063B3.obj
+├── ID-0464-2EE13F53-64E5-10BF-E053-CA2BA8C063B3.obj
+└── ID-0464-2EE13F53-6320-10BF-E053-CA2BA8C063B3.obj
+```
