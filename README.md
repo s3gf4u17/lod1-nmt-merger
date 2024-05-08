@@ -1,13 +1,13 @@
 1. Przekonwertować dane CityGML do formatu OBJ
 - sklonować repozytorium https://github.com/tum-gis/CityGML2OBJv2
-- zainstalować wymagane biblioteki, przykład:
+- w sklonowanym folderze zainstalować wymagane biblioteki, przykład:
 ```
 sudo apt install virtualenv
 virtualenv --python=python3 venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
-- odpalic konwerter:
+- uruchomić konwerter komendą:
 ```
 python3 CityGML2OBJs.py -i <folder z plikami GML> -o <folder do zapisu> -g 1
 ```
