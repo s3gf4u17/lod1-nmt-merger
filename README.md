@@ -9,7 +9,7 @@ pip install -r requirements.txt
 ```
 - uruchomić konwerter komendą:
 ```
-python3 CityGML2OBJs.py -i <folder z plikami GML> -o <folder do zapisu> -g 1
+python3 CityGML2OBJs.py -i <folder-z-plikami-GML> -o <folder-do-zapisu> -g 1
 ```
 ### 2. Przygotować geometrię budynków
 - załadowac plik .obj z poprzedniego etapu w programie [Blender](https://www.blender.org/)
@@ -75,3 +75,8 @@ temp
 ├── ID-0464-2EE13F53-64E5-10BF-E053-CA2BA8C063B3.obj
 └── ID-0464-2EE13F53-6320-10BF-E053-CA2BA8C063B3.obj
 ```
+Przykładowe dane zamieszczono razem w folderze `temp`. Program należy wywołać z dwoma dodatkowymi parametrami:
+```
+./main <sciezka-do-nmt-obj> <folder-z-budynkami-obj>
+```
+Z uwagi na to, że potraktowałem to jako zadanie czysto rekrutacyjne, nie dokładałem dodatkowych flag (np. do zmiany kierunku wektorów normalnych mesha). Na obecnym etapie takich zmian należy dokonywać w kodzie.
