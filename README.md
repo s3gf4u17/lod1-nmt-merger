@@ -12,8 +12,10 @@ pip install -r requirements.txt
 python3 CityGML2OBJs.py -i <folder z plikami GML> -o <folder do zapisu> -g 1
 ```
 ### 2. Przygotować geometrię budynków
-- załadowac plik OBJ z poprzedniego etapu w programie [Blender](https://www.blender.org/)
-- dla kazdego z obiektow usunac duplikaty werteksow (klikniecie na obiekt,"TAB" do przejscia w tryb edycji,"1" do przejscia w tryb werteksow,"A" do zaznaczenia wszystkich,prawy przycisk myszy->merge vertices->by distance,ustawic distance na np. 20cm)
+- załadowac plik .obj z poprzedniego etapu w programie [Blender](https://www.blender.org/)
+- dla każdego z obiektów usunąć duplikaty werteksów
+    - kliknięcie na obiekt
+    - "TAB" do przejscia w tryb edycji,"1" do przejscia w tryb werteksow,"A" do zaznaczenia wszystkich,prawy przycisk myszy->merge vertices->by distance,ustawic distance na np. 20cm
 - wyeksportowac kazdy z obiektow do nowego, wspolnego folderu (klikniecie na obiekt,file->export->wavefront obj:limit to selected,forward -Z,up Y,+normals,+triangulated mesh,-materials export)
 3. skompilowac program
 4. uruchomic program
