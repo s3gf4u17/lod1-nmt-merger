@@ -63,6 +63,6 @@ cd build && make -j8
 ```
 Program zostanie utworzony w lokalizacji `projekt/build/main`. Można go następnie przerzucić do dowolnego folderu jako samodzielny plik wykonywalny.
 > [!WARNING]  
-> Critical content demanding immediate user attention due to potential risks.
+> W pliku `CMakeLists.txt` znajduje się również link do innej biblioteki - tinyxml2. Nie jest wymagane jej pobranie, linki zostały zakomentowane gdyż biblioteka nie została ostatecznie wykorzystana, ale może się przydać w przyszłości.
 
 ### 4. Uruchomić program
