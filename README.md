@@ -1,5 +1,5 @@
 > [!NOTE]  
-> Jako iż wiem, że nie wszyscy mają ochotę na zabawę z Cmake'm, gotowy skompilowany program można znaleźć w zakładce Releases (po prawej stronie w GUI Githuba). BUILD JEDYNIE POD LINUXA.
+> Jako iż wiem, że nie wszyscy mają ochotę na zabawę z Cmake'm, gotowy skompilowany program można znaleźć w zakładce Releases (po prawej stronie w GUI Githuba). BUILDY POD UBUNTU 20.04 i 22.04!
 
 ### Wynik działania programu
 <table width="100%">
@@ -80,7 +80,7 @@ Program zostanie utworzony w lokalizacji `projekt/build/main`. Można go następ
 > [!WARNING]  
 > W pliku `CMakeLists.txt` znajduje się również link do innej biblioteki - tinyxml2. Nie jest wymagane jej pobranie, linki zostały zakomentowane gdyż biblioteka nie została ostatecznie wykorzystana, ale może się przydać w przyszłości.
 ### 4. Uruchomić program
-Przyotowane wcześniej budynki powinny znajdować się w oddzielnych plikach, w jednym folderze. Folder nie powinien zawierać innych plików. Przykład:
+Przygotowane wcześniej budynki powinny znajdować się w oddzielnych plikach, w jednym folderze. Folder nie powinien zawierać innych plików. Przykład:
 ```
 temp
 ├── ID-0464-2EE13F53-5D0A-10BF-E053-CA2BA8C063B3.obj
@@ -90,14 +90,14 @@ temp
 ├── ID-0464-2EE13F53-64E5-10BF-E053-CA2BA8C063B3.obj
 └── ID-0464-2EE13F53-6320-10BF-E053-CA2BA8C063B3.obj
 ```
-Przykładowe dane zamieszczono razem w folderze `temp`. Program należy wywołać z dwoma dodatkowymi parametrami:
+Przykładowe dane zamieszczono razem w folderze `temp`. Program należy wywołać z trzema dodatkowymi parametrami:
 ```
-./main <sciezka-do-nmt-obj> <folder-z-budynkami-obj>
+./main <sciezka-do-nmt-obj> <folder-z-budynkami-obj> <sciezka-zapisu-wyniku>
 ```
 Wykorzystując jedynie dane zawarte w repozytorium komenda będzie wyglądać następująco:
 ```
-./main ../data/nmt.obj ../temp
+./main ../data/nmt.obj ../temp result.obj
 ```
-Wygenerowany zostanie plik `result.obj` z wynikiem połączenia geometrii NMT i CityGML. Z uwagi na to, że potraktowałem to jako zadanie czysto rekrutacyjne, nie dokładałem dodatkowych flag (np. do zmiany kierunku wektorów normalnych mesha). Na obecnym etapie takich zmian należy dokonywać w kodzie.
+Wygenerowany zostanie plik wyjsciowy z wynikiem połączenia geometrii NMT i CityGML (wraz z logiem potwierdzajacym zapis). W przypadku bledu zapisu pliku, zostanie wyswietlony systemowy kod bledu, ktorego znaczenie mozna sprawdzic [tutaj](https://learn.microsoft.com/pl-pl/cpp/c-runtime-library/errno-constants?view=msvc-170). Z uwagi na to, że potraktowałem to jako zadanie czysto rekrutacyjne, nie dokładałem dodatkowych flag (np. do zmiany kierunku wektorów normalnych mesha). Na obecnym etapie takich zmian należy dokonywać w kodzie.
 > [!WARNING]  
 > Właśnie zauważyłem, że zapomniałem dodać translacji mesha do jego miejsca początkowego (pierwszy punkt nmt będzie zatem miał współrzędne 0,0,0 zamiast swoich wejściowych). Jest to dorzucenie 1 linijki kodu ale nie mam jak tego chwilowo zrobić gdyż jestem poza domem.
