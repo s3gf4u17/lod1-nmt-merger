@@ -12,7 +12,6 @@
 typedef CGAL::Exact_predicates_inexact_constructions_kernel Kernel;
 typedef CGAL::Surface_mesh<Kernel::Point_3> Mesh;
 #include <errno.h>
-#define SYSERROR()  errno
 
 int main(int argc,char **argv) {
     // 1. load nmt file
@@ -67,7 +66,7 @@ int main(int argc,char **argv) {
         result.close();
         std::clog<<"FILE SAVED\n";
     } else {
-        std::clog<<"ERROR SAVING FILE:"<<SYSERROR()<<std::endl;
+        std::clog<<"ERROR SAVING FILE:"<<errno<<":"<<strerror(errno)<<std::endl;
     }
     return 0;
 }
