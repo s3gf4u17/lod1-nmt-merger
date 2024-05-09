@@ -11,6 +11,8 @@
 #include <CGAL/Surface_mesh.h>
 typedef CGAL::Exact_predicates_inexact_constructions_kernel Kernel;
 typedef CGAL::Surface_mesh<Kernel::Point_3> Mesh;
+#include <errno.h>
+#define SYSERROR()  errno
 
 int main(int argc,char **argv) {
     // 1. load nmt file
@@ -58,7 +60,14 @@ int main(int argc,char **argv) {
         // break;
     }
     // 11. export result
-    std::ofstream result("result.obj");
-    CGAL::IO::write_OBJ(result,NMTmerged);
+    std::ofstream result(argv[3]);
+    if (result.is_open()) {
+        CGAL::IO::write_OBJ(result,NMTmerged);
+        result.flush();
+        result.close();
+        std::clog<<"FILE SAVED\n";
+    } else {
+        std::clog<<"ERROR SAVING FILE:"<<SYSERROR()<<std::endl;
+    }
     return 0;
 }
