@@ -98,6 +98,6 @@ Wykorzystując jedynie dane zawarte w repozytorium komenda będzie wyglądać na
 ```
 ./main ../data/nmt.obj ../temp result.obj
 ```
-Wygenerowany zostanie plik wyjsciowy z wynikiem połączenia geometrii NMT i CityGML (wraz z logiem potwierdzajacym zapis). W przypadku bledu zapisu pliku, zostanie wyswietlony systemowy kod bledu, ktorego znaczenie mozna sprawdzic [tutaj](https://learn.microsoft.com/pl-pl/cpp/c-runtime-library/errno-constants?view=msvc-170). Z uwagi na to, że potraktowałem to jako zadanie czysto rekrutacyjne, nie dokładałem dodatkowych flag (np. do zmiany kierunku wektorów normalnych mesha). Na obecnym etapie takich zmian należy dokonywać w kodzie.
+Wygenerowany zostanie plik wyjsciowy z wynikiem połączenia geometrii NMT i CityGML (wraz z logiem potwierdzajacym zapis). W przypadku bledu zapisu pliku, zostanie wyswietlony systemowy kod bledu wraz z jego krotkim [opisem](https://learn.microsoft.com/pl-pl/cpp/c-runtime-library/errno-constants?view=msvc-170). Z uwagi na to, że potraktowałem to jako zadanie czysto rekrutacyjne, nie dokładałem dodatkowych flag (np. do zmiany kierunku wektorów normalnych mesha). Na obecnym etapie takich zmian należy dokonywać w kodzie.
 > [!WARNING]  
 > Właśnie zauważyłem, że zapomniałem dodać translacji mesha do jego miejsca początkowego (pierwszy punkt nmt będzie zatem miał współrzędne 0,0,0 zamiast swoich wejściowych). Jest to dorzucenie 1 linijki kodu ale nie mam jak tego chwilowo zrobić gdyż jestem poza domem.
